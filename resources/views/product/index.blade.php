@@ -15,7 +15,7 @@
         foreach($product as $p){
             print_r($p);
         }
-        echo "///view" .  $_GET['dd'];
+        echo "///view" ;
 
 ?>
 
