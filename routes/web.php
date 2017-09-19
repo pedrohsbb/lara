@@ -15,9 +15,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('product', 'ProductController');
 
-Route::get('jobs', 'JobsController@api');
+Route::get('product', 'ProductController@index');
+
+Route::post('product', 'ProductController@create');
+
+Route::post('product/{product}', 'ProductController@store');
+
+//Route::post('product/{estoque_itens2}', 'ProductController@store');
+
+
+Route::resource('docs/api', 'DocsController');
+
+
+//Route::post('product', 'ProductController@store');
+
 
 
 //Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {

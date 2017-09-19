@@ -9,17 +9,23 @@ use Illuminate\Support\Facades\DB;
 class Product extends Model
 {
 
-    protected $fillable = ['name','description','quantity','price'];
-    protected $guarded = ['id', 'created_at', 'update_at'];
-    protected $table = 'products';
+//    protected $fillable = ['name','description','quantity','price'];
+//    protected $guarded = ['id', 'created_at', 'update_at'];
+    protected $table = 'product';
+
+    public $timestamps = false;
 
     public function index(){
         return array("aa"=>"bb");
 
     }
 
+    public function someText(){
+        return DB::SELECT('select * from estoque_itens2;');
+    }
+
     public function insert_raw(){
 
-        return DB::SELECT('insert into products (name) VALUES ("ddssE")');
+        return DB::SELECT('insert into estoque_itens2 (name) VALUES ("ddssE")');
     }
 }
