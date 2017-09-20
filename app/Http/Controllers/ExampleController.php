@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ExampleRequest;
 use Illuminate\Http\Request;
 //use Illuminate\Database\Eloquent\Model;
 
@@ -18,17 +19,14 @@ class ExampleController extends Controller
 {
 
     /**
-     * This iaas the short description [and should be unique as anchor tags link to this in navigation menu]
+     * This is aaa the short description [and should be unique as anchor tags link to this in navigation menu]
      *
      * This can be an optional longer description of your API call, used within the documentation.
      *
      */
-    public function foo(Request $request)
+    public function foo(ExampleRequest $request)
     {
-        $request->validate([
-            'title' => 'required|unique:posts|max:255',
-            'body' => 'required',
-        ]);
+
 
     }
     public function rules()

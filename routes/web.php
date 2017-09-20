@@ -11,14 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
 
 
 Route::get('product', 'ProductController@index');
 
+Route::get('layboot', 'ProductController@layboot');
+
 Route::post('product', 'ProductController@create');
+
+Route::post('salva_produto', 'ProductController@salva_produto');
 
 Route::post('product/{product}', 'ProductController@store');
 

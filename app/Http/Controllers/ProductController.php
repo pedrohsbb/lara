@@ -14,6 +14,7 @@ use App\estoque_itens2;
 use Illuminate\Support\Facades\Redirect;
 use function Psy\debug;
 
+
 class ProductController extends Controller
 {
     public function index()
@@ -28,6 +29,12 @@ class ProductController extends Controller
 //        return view('product.index');
 //        return redirect()->route('product.index')->with('message', 'Product updated successfully!');
 //        return view('product.index',['product' => ""]);
+    }
+
+    public function layboot(){
+
+        return view('product.layboot');
+
     }
 
     public function create(Request $request)
@@ -50,13 +57,19 @@ class ProductController extends Controller
     public function store(Request $request, product $product)
     {
 
-        //dd($request->all());
 
         echo "<pre>";
         print_r($product->attributesToArray());
 
-        echo "<br><br><br>";
 
+
+
+
+
+
+
+
+        echo "<br><br><br>";
 
 //      $product->update($request->all());
         die('storeeee');
@@ -64,7 +77,6 @@ class ProductController extends Controller
         print_r($request->all());
         echo "</pre>";
 
-        die('dd');
 
         die(var_dump($request));
 
@@ -80,6 +92,15 @@ class ProductController extends Controller
     public function show($id)
     {
         //
+    }
+
+    public function salva_produto(Request $request)
+    {
+        $di = new IntegracaoCeleraProdutos();
+//        $aodfij = \modulo
+
+        dd($request->all());
+
     }
 
     public function edit($id)
