@@ -16,6 +16,13 @@
 //});
 
 
+Route::get('tester', 'TesterController@index');
+
+Route::post('tester/salvar/{tester}', 'TesterController@update_tester');
+
+Route::post('tester/salvar/', 'TesterController@store');
+
+
 
 Route::get('product', 'ProductController@index');
 
@@ -31,6 +38,9 @@ Route::post('product/{product}', 'ProductController@store');
 
 
 Route::resource('docs/api', 'DocsController');
+
+
+
 
 
 //Route::post('product', 'ProductController@store');

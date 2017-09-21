@@ -95,7 +95,7 @@
                 <td><font size="2">&nbsp;</font></td>
                 <td height="15" valign="middle" align="right"><font size="1">
                         &nbsp; [ <a href="?ID_produto=" title="Atualizar Página"><img src="../../../../imagens/arrow_refresh.png" height="12"> Atualizar</a> ]
-                        &nbsp; [ <a href="lista_estoque2.php" title="Voltar a Lista de Produtos"><img src="../../../../imagens/arrow_turn_left.png" height="12"> Voltar</a> ]
+                        &nbsp; [ <a href="http://localhost/root/trunk/php/modulos/cadastro/item/lista_estoque2.php" title="Voltar a Lista de Produtos"><img src="../../../../imagens/arrow_turn_left.png" height="12"> Voltar</a> ]
                     </font></td>
             </tr>
             </tbody></table>

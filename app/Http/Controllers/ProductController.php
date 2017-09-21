@@ -67,8 +67,6 @@ class ProductController extends Controller
 
 
 
-
-
         echo "<br><br><br>";
 
 //      $product->update($request->all());
