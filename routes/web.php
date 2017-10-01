@@ -18,6 +18,8 @@
 
 Route::get('crudintro/datatable', 'CrudintroController@datatable');
 
+Route::get('crudintro/modal', 'CrudintroController@modal');
+
 
 
 

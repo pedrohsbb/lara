@@ -34,6 +34,11 @@ class CrudintroController extends Controller
 
     }
 
+    public function modal()
+    {
+		return view('crudintro.modal',['output' => 'fsdf']);    	
+    }
+
     public function update_tester(Request $request, tester $tester){
 
 //          $test = new Tester();

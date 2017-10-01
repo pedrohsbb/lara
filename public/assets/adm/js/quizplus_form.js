@@ -165,28 +165,30 @@ function load_table_classes() {
 
 function update_class(quiz_id, class_id){
 
-    $quiz_content = $( "#quiz-content" ).data( "var" );
 
-    $("#post-statistic-modal").modal('show');
+    // $("#post-statistic-modal").modal('show');
 
-    $("#post-statistic-modal .modal-body .load").fadeOut(1000);
+    // $("#post-statistic-modal .modal-body .load").fadeOut(1000);
 
-    // $.post('learn/quiz/'+quiz_id+'/class/'+class_id, '', function (data) {
-    //     if (data.error) {
+    $.get('http://dev.localhost/blog/public/crudintro/modal', '', function (data) {
+        if (data.error) {
 
-    //         alert_box(data);
+            alert_box(data);
 
-    //         return false;
-    //     } else {
+            return false;
+        } else {
 
             
-    //         $("#post-statistic-modal").modal('show');
+            $("#post-statistic-modal").modal('show');
 
-    //         $("#post-statistic-modal .modal-body .load").fadeOut(1000);
+            $("#post-statistic-modal .modal-body .load").fadeOut(1000);
 
 
-    //     }
-    // });
+            $('#content-modal').html(data);
+
+
+        }
+    });
 }
 
 

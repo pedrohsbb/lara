@@ -1,39 +1,30 @@
 
     <link rel="stylesheet" type="text/css" href="/blog/public/assets/css/bootstrap.css?v=v1.113.22"/>
+    
     <link rel="stylesheet" type="text/css" href="/blog/public/assets/css/font-awesome.css?v=v1.113.22"/>
     <link rel="stylesheet" type="text/css" href="/blog/public/assets/css/bootstrap-theme.css?v=v1.113.22"/>
-    <script type="text/javascript" src="/blog/public/assets/js/jquery-1.11.3.js?v=v1.113.22"></script>
-    <script type="text/javascript" src="/blog/public/assets/js/bootstrap.js?v=v1.113.22"></script>
-    <script type="text/javascript" src="/blog/public/assets/at/dist/js/jquery.caret.js?v=v1.113.22"></script>
-    <script type="text/javascript" src="/blog/public/assets/at/dist/js/jquery.atwho.js?v=v1.113.22"></script>
-    <script type="text/javascript" src="/blog/public/assets/js/script.js?v=v1.113.22"></script>
-    <link rel="stylesheet" type="text/css" href="/blog/public/assets/chosen/chosen.css?v=v1.113.22"/>
-    <link rel="stylesheet" type="text/css" href="/blog/public/assets/emoji/css/jquery.emoji.css?v=v1.113.22"/>
-    <link rel="stylesheet" type="text/css" href="/blog/public/assets/css/userinfo.css?v=v1.113.22"/>
+    
+    
     <link rel="stylesheet" type="text/css" href="/blog/public/assets/dataTables/extensions/Responsive/css/responsive.bootstrap.min.css?v=v1.113.22"/>
     <link rel="stylesheet" type="text/css" href="/blog/public/assets/dataTables/media/css/dataTables.bootstrap.css?v=v1.113.22"/>
     <link rel="stylesheet" type="text/css" href="/blog/public/assets/dataTables/media/css/jquery.dataTables.css?v=v1.113.22"/>
     <link rel="stylesheet" type="text/css" href="/blog/public/assets/css/dataTables.css?v=v1.113.22"/>
     <link rel="stylesheet" type="text/css" href="/blog/public/assets/croppie/croppie.min.css?v=v1.113.22"/>
-    <link rel="stylesheet" type="text/css" href="/blog/public/assets/css/main.css?v=v1.113.22"/>
-    <link rel="stylesheet" type="text/css" href="/blog/public/assets/css/media.css?v=v1.113.22"/>    
-    <link rel="stylesheet" type="text/css" href="/blog/public/assets/css/admin.css?v=v1.113.22"/>
-    <link rel="stylesheet" type="text/css" href="/blog/public/assets/css/superfilter.css?v=v1.113.22"/>
     <link rel="stylesheet" type="text/css" href="/blog/public/assets/datetimepicker/css/bootstrap-datetimepicker.css?v=v1.113.22"/>
     <link rel="stylesheet" type="text/css" href="/blog/public/assets/dataTables/extensions/ColReorder/css/colReorder.dataTables.css?v=v1.113.22"/>
     <link rel="stylesheet" type="text/css" href="/blog/public/assets/dataTables/extensions/Colvis/css/dataTables.Colvis.css?v=v1.113.22"/>
     <link rel="stylesheet" type="text/css" href="/blog/public/assets/dataTables/extensions/ColResize/css/dataTables.colResize.css?v=v1.113.22"/>
     <link rel="stylesheet" type="text/css" href="/blog/public/assets/adm/css/quizplus_form.css?v=v1.113.22"/>    
 
+    
+    
+    <script type="text/javascript" src="/blog/public/assets/js/jquery-1.11.3.js?v=v1.113.22"></script>
 
+    //modal etc
+    <script type="text/javascript" src="/blog/public/assets/js/bootstrap.js?v=v1.113.22"></script>
 
-    <script type="text/javascript" src="/blog/public/assets/emoji/js/jquery.emoji.js?v=v1.113.22"></script>
-    <script type="text/javascript" src="/blog/public/assets/js/userinfo.js?v=v1.113.22"></script>
-    <script type="text/javascript" src="/blog/public/assets/chosen/chosen.jquery.js?v=v1.113.22"></script>
-    <script type="text/javascript" src="/blog/public/assets/js/superfilter.js?v=v1.113.22"></script>
-    <script type="text/javascript" src="/blog/public/assets/js/group_superfilter.js?v=v1.113.22"></script>
     <script type="text/javascript" src="/blog/public/assets/adm/js/quizplus_form.js?v=v1.113.22"></script>
-    <script type="text/javascript" src="/blog/public/assets/datetimepicker/js/moment-with-locales.min.js?v=v1.113.22"></script>
+
     <script type="text/javascript" src="/blog/public/assets/datetimepicker/js/bootstrap-datetimepicker.min.js?v=v1.113.22"></script>
     <script type="text/javascript" src="/blog/public/assets/dataTables/media/js/jquery.dataTables.js?v=v1.113.22"></script>
     <script type="text/javascript" src="/blog/public/assets/dataTables/media/js/dataTables.bootstrap.js?v=v1.113.22"></script>
@@ -41,10 +32,6 @@
     <script type="text/javascript" src="/blog/public/assets/dataTables/extensions/ColReorder/js/dataTables.colReorder.js?v=v1.113.22"></script>
     <script type="text/javascript" src="/blog/public/assets/dataTables/extensions/Colvis/js/dataTables.Colvis.js?v=v1.113.22"></script>
     <script type="text/javascript" src="/blog/public/assets/dataTables/extensions/ColResize/js/dataTables.colResize-modificado.js?v=v1.113.22"></script>
-    <script type="text/javascript" src="/blog/public/assets/js/check_files.js?v=v1.113.22"></script>
-    <script type="text/javascript" src="/blog/public/assets/js/privacy_view.js?v=v1.113.22"></script>
-    <script type="text/javascript" src="/blog/public/assets/croppie/croppie.min.js?v=v1.113.22"></script></body>
-
 
 
 
@@ -62,10 +49,7 @@
             </div>
 
                 <div class="panel-body">
-                    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-                    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-                    <link rel="stylesheet" href="/resources/demos/style.css">
-
+                    
                     <script>
                         $( function() {
 //                    $( "#sortable" ).sortable();
@@ -136,6 +120,10 @@
                                         aria-hidden="true">&times;</span></button>
                             <h4 class="modal-title">fdfdsf</h4>
                         </div>
+                        <div id="content-modal">
+original
+                        </div>
+
                         <form action="aspodifj" method="post">
                             <input type="hidden" id="learn_id" name="learn_id" value="">
                             <div class="modal-body">
@@ -298,44 +286,3 @@
     </div>
 </div>
 
-<div id="class-duplicate">
-    <div class="modal fade post-statistic-modal_duplicate template-content" tabindex="-1" role="dialog" id="post-statistic-modal-duplicate"
-         aria-labelledby="post-statistic-modal_duplicate"
-         aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content ">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Duplicar Turma</h4>
-                </div>
-                <form action="" method="post">
-                    <div class="modal-body content-box min-height">
-                        <div class="row">
-                            <div class=" col-xs-12">
-                                <div class="row">
-                                    <div class=" title-quiz col-xs-12">
-                                        <label for="input-title" class="label_title">Insira nome da turma nova</label>
-                                        <input type="text" class="form-control input-title" value="" name="name"
-                                               id="input-name" required>
-                                    </div>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <br>
-                                    <div class="fright">
-                                        <button type="submit" class="btn btn-send">Salvar</button>
-                                    </div>
-                                    <div class="fright">
-                                        <button type="button" class="btn cancel-but btn-gray" data-dismiss="modal">Cancelar</button>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
