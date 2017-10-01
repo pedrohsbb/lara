@@ -10,12 +10,12 @@ use App\Product;
 
 use App\Http\Requests\TesterRequest;
 
-
 use Illuminate\Support\Facades\DB;
 
 class TesterController extends Controller
 {
-    public function index(){
+    public function index()
+    {
 
         return view('tester.index',['' => '']);
 

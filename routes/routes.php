@@ -2,4 +2,11 @@
 
 
 
-//Route::get('productStore', 'ProductController@store');
+Route::get('tester', function(){
+	return 'dd';
+});
+
+
+Route::get('testerb', function(){
+	return 'dd';
+});

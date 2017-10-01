@@ -16,11 +16,24 @@
 //});
 
 
+Route::get('crudintro/datatable', 'CrudintroController@datatable');
+
+
+
+
+
+
+
 Route::get('tester', 'TesterController@index');
+
+Route::get('testerb', function(){
+	return "fas";
+});
 
 Route::post('tester/salvar/{tester}', 'TesterController@update_tester');
 
 Route::post('tester/salvar/', 'TesterController@store');
+
 
 
 

@@ -62,11 +62,6 @@ class ProductController extends Controller
         print_r($product->attributesToArray());
 
 
-
-
-
-
-
         echo "<br><br><br>";
 
 //      $product->update($request->all());
