@@ -4,10 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Tester;
-
-use App\Product;
-
 use App\CrudintroModel;
 
 use App\Http\Requests\TesterRequest;
@@ -25,54 +21,67 @@ class CrudintroController extends Controller
 
     public function datatable(){
 
-    	$model = new CrudintroModel();
-		$output["learnclass"] = $model->all()->toArray();
+	
 
-		// dd($output["learnclass"]);
+		if ( empty(session('carros')) )
+		{
+			$output['carros'] = array();
+		} else 
+		{
+			$output['carros'] = session('carros');
+			
+		}
+		
 
 		return view('crudintro.datatable',['output' => $output]);    	
 
     }
+	
+	public function carrosStore(Request $request)
+	{
+		
+		$novoCarro = $request->toArray() ; 
+
+		$carros = session('carros');
+				
+		$carros[$novoCarro["id"]] = $novoCarro ;
+		
+		session(['carros' => $carros ]);
+		
+	
+	}
+	
+	public function getCarro($id)
+	{
+		$carros = session('carros');
+		
+		return $carros[$id] ;
+
+		
+	}
+	
+	public function carrosDelete(Request $request)
+	{
+		
+
+		$id = key ($request->toArray());
+
+		$carros = session('carros');
+		
+		unset($carros[$id]);
+				
+		session(['carros' => $carros ]);
+		
+
+		
+	}
 
     public function modal()
     {
 		return view('crudintro.modal',['output' => 'fsdf']);    	
     }
 
-    public function update_tester(Request $request, tester $tester){
-
-//          $test = new Tester();
-
-          //DB::table('product')->insert($request->all());
-
-          return view('tester.index',['product' => '']);
-
-//        $tester->setRawAttributes($request->all());
-//
-//        $tester->save();
-//
-//        dd(Tester::all()->toArray());
-//
-//        $tester->name = $request->name;
-//        $tester->save();
-//        dd($tester->attributesToArray());
-//
-//
-//        dd(product::all()->toArray());
-//
-//        $result = DB::table('product')->where('name', 'asdf')->get();
-//
-//
-//
-////        $tester->alterar_registro();
-//
-////        $tester = new Tester();
-//
-////        dd($tester);
-//
-//        die('end');
-
-    }
+	
 
     public function store(TesterRequest $request){
 

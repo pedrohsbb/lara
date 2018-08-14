@@ -21,54 +21,14 @@ Route::get('crudintro/datatable', 'CrudintroController@datatable');
 Route::get('crudintro/modal', 'CrudintroController@modal');
 
 
+Route::post('crudintro/carros', 'CrudintroController@carrosStore');
+
+Route::delete('crudintro/carros', 'CrudintroController@carrosDelete');
+
+Route::get('crudintro/carros/{id}', 'CrudintroController@getCarro');
+
+Route::put('crudintro/carros/{id}', 'CrudintroController@carrosStore');
 
 
 
 
-
-Route::get('tester', 'TesterController@index');
-
-Route::get('testerb', function(){
-	return "fas";
-});
-
-Route::post('tester/salvar/{tester}', 'TesterController@update_tester');
-
-Route::post('tester/salvar/', 'TesterController@store');
-
-
-
-
-Route::get('product', 'ProductController@index');
-
-Route::get('layboot', 'ProductController@layboot');
-
-Route::post('product', 'ProductController@create');
-
-Route::post('salva_produto', 'ProductController@salva_produto');
-
-Route::post('product/{product}', 'ProductController@store');
-
-//Route::post('product/{estoque_itens2}', 'ProductController@store');
-
-
-Route::resource('docs/api', 'DocsController');
-
-
-
-
-
-//Route::post('product', 'ProductController@store');
-
-
-
-//Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
-//    Route::get('/', 'AdminController@getIndex');
-//    Route::get('projetos', 'ProjetosController@getIndex');
-//    Route::get('projetos/inserir', 'ProjetosController@getInserir');
-//    Route::post('projetos/inserir', 'ProjetosController@postInserir');
-//    Route::get('projetos/editar/{id}', 'ProjetosController@getEditar');
-//    Route::post('projetos/editar/{id}', 'ProjetosController@postEditar');
-//    Route::post('projetos/deletar/{id}', 'ProjetosController@postDeletar');
-//
-//});
